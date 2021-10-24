@@ -13,13 +13,34 @@
 #botao {
     margin-top: 1em;
     margin-bottom: 2em;
-    width: 10%;
-    height: 8%;
     text-align: center;
+    background-color;
+}
+#textobotao {
+    color: blue;
 }
 
 #rodape {
     text-align: right;
+}
+
+#ordem {
+    text-align:center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#dadospessoais {
+    margin-bottom: 0;
+}
+
+#dadosdelocalização {
+    margin-top: 0;
+}
+
+.linhas {
+    display: flex;
+    text-align: center;
 }
 
 body {
