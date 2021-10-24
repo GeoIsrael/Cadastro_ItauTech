@@ -10,62 +10,62 @@
 </head>
 <body>
     
-    <div>
+    <div id="titulo">
         <H1>formulario CAD</H1>
         <p>Complete suas Informações</p>
     </div>
 
     <div>
         <form action="">
-            <fieldset>
-                <div>
-                    <label> <strong> Nome </strong> </label>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="name"> <strong> Nome </strong> </label>
                     <input type="name" name="nome" id="name" placeholder="Digite seu Nome" required> 
                 </div>
                     <br>
-                <div>
-                    <label> <strong> Sobrenome </strong> </label>
+                <div class="campo">
+                    <label for="sobrenome"> <strong> Sobrenome </strong> </label>
                     <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome" required>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>E-mail</strong> </label>
+                <div class="campo"> 
+                    <label for="email"> <strong>E-mail</strong> </label>
                     <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
                 </div>
                     <br>
-                <div>
-                    <labe> <strong>CPF</strong> </label>
+                <div class="campo">
+                    <label for="CPF"> <strong>CPF</strong> </label>
                     <input type="CPF" name="CPF" id="CPF" placeholder="Digite o seu CPF (COMENTE NUMEROS)" required>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>RG</strong> </label>
+                <div class="campo">
+                    <label for="RG"> <strong>RG</strong> </label>
                     <input type="RG" name="RG" id="RG" placeholder="Digite o seu RG" required>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>Sexo</strong> </label>
+                <div> class="campo"
+                    <label for="sexo"> <strong>Sexo</strong> </label>
                     <input type="sexo" name="sexo" id="sexo" placeholder="Digite o seu Sexo" required>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>Endereço</strong> </label>
-                    <input type="text" name="Endereço" id="Endereço" placeholder="Digite seu E-mail Endereço" required>
+                <div class="campo">
+                    <label for="endereço"> <strong>Endereço</strong> </label>
+                    <input type="text" name="endereço" id="endereço" placeholder="Digite seu E-mail Endereço" required>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>Numero</strong> </label>
-                    <input type="text" name="numero" id="naumero" placeholder="Digite o Numero da sua Residencia" required>
+                <div class="campo">
+                    <label for="numero"> <strong>Numero</strong> </label>
+                    <input type="text" name="numero" id="numero" placeholder="Digite o Numero da sua Residencia" required>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>Bairro</strong> </label>
-                    <input type="text" name="Bairro" id="Bairro" placeholder="Digite seu Bairro" required>
+                <div class="campo">
+                    <label for="bairro"> <strong>Bairro</strong> </label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Digite seu Bairro" required>
                 </div>
                     <br>
-                <div>
-                    <labe> <strong>Estado</strong> </label>
-                    <select name="Estado" id="Estado" required>
+                <div class="campo">
+                    <label for="estado"> <strong>Estado</strong> </label>
+                    <select name="estado" id="estado" required>
                         <option value="1" selected disabled>Escolha seu Estado</option>
                         <option value="2">Acre</option>
                         <option value="3"> Alagoas</option>
@@ -97,23 +97,23 @@
                     </select>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>Cidade</strong> </label>
-                    <input type="text" name="Cidade" id="Cidade" placeholder="Digite o nome da sua Cidade" required>
+                <div class="campo">
+                    <label for="cidade"> <strong>Cidade</strong> </label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da sua Cidade" required>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>CEP</strong> </label>
+                <div class="campo">
+                    <label for="CEP"> <strong>CEP</strong> </label>
                     <input type="CEP" name="CEP" id="CEP" placeholder="Digite Seu CEP" required>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>Telefone Fixo</strong> </label>
+                <div class="campo">
+                    <label for="telefone"> <strong>Telefone Fixo</strong> </label>
                     <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone Fixo" required>
                 </div>
                     <br>
-                <div>
-                    <label> <strong>Celular</strong> </label>
+                <div class="campo">
+                    <label for="celular"> <strong>Celular</strong> </label>
                     <input type="tel" name="tel" id="celular" placeholder="Digite seu Celular" required>
                 </div>
             </fieldset>
