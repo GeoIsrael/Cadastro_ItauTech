@@ -20,53 +20,53 @@
             <fieldset>
                 <div>
                     <label> Nome </label>
-                    <input type="name" name="nome" id="name" placeholder="Digite seu Nome"> 
+                    <input type="name" name="nome" id="name" placeholder="Digite seu Nome" required> 
                 </div>
                     <br>
                 <div>
                     <label>Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome" required>
                 </div>
                     <br>
                 <div>
                     <label> E-mail </label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail,,">
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
                 </div>
                     <br>
                 <div>
                     <labe> CPF</label>
-                    <input type="CPF" name="CPF" id="CPF" placeholder="Digite o seu CPF (COMENTE NUMEROS)">
+                    <input type="CPF" name="CPF" id="CPF" placeholder="Digite o seu CPF (COMENTE NUMEROS)" required>
                 </div>
                     <br>
                 <div>
                     <label> RG</label>
-                    <input type="RG" name="RG" id="RG" placeholder="Digite o seu RG">
+                    <input type="RG" name="RG" id="RG" placeholder="Digite o seu RG" required>
                 </div>
                     <br>
                 <div>
                     <label> Sexo </label>
-                    <input type="sexo" name="sexo" id="sexo" placeholder="Digite o seu Sexo">
+                    <input type="sexo" name="sexo" id="sexo" placeholder="Digite o seu Sexo" required>
                 </div>
                     <br>
                 <div>
                     <label> Endereço </label>
-                    <input type="text" name="Endereço" id="Endereço" placeholder="Digite seu E-mail Endereço">
+                    <input type="text" name="Endereço" id="Endereço" placeholder="Digite seu E-mail Endereço" required>
                 </div>
                     <br>
                 <div>
                     <label> Numero </label>
-                    <input type="text" name="numero" id="naumero" placeholder="Digite o Numero da sua Residencia">
+                    <input type="text" name="numero" id="naumero" placeholder="Digite o Numero da sua Residencia" required>
                 </div>
                     <br>
                 <div>
                     <label> Bairro</label>
-                    <input type="text" name="Bairro" id="Bairro" placeholder="Digite seu Bairro">
+                    <input type="text" name="Bairro" id="Bairro" placeholder="Digite seu Bairro" required>
                 </div>
                     <br>
                 <div>
                     <labe> Estado</label>
-                    <select name="Estado" id="Estado">
-                        <option value="1">Escolha seu Estado</option>
+                    <select name="Estado" id="Estado" required>
+                        <option value="1" selected disabled>Escolha seu Estado</option>
                         <option value="2">Acre</option>
                         <option value="3"> Alagoas</option>
                         <option value="4"> Amapá</option>
@@ -99,24 +99,26 @@
                     <br>
                 <div>
                     <label>Cidade</label>
-                    <input type="text" name="Cidade" id="Cidade" placeholder="Digite o nome da sua Cidade">
+                    <input type="text" name="Cidade" id="Cidade" placeholder="Digite o nome da sua Cidade" required>
                 </div>
                     <br>
                 <div>
                     <label> CEP </label>
-                    <input type="CEP" name="CEP" id="CEP" placeholder="Digite Seu CEP">
+                    <input type="CEP" name="CEP" id="CEP" placeholder="Digite Seu CEP" required>
                 </div>
                     <br>
                 <div>
                     <label> Telefone Fixo</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone Fixo">
+                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone Fixo" required>
                 </div>
                     <br>
                 <div>
                     <label> Celular</label>
-                    <input type="tel" name="tel" id="celular" placeholder="Digite seu Celular">
+                    <input type="tel" name="tel" id="celular" placeholder="Digite seu Celular" required>
                 </div>
             </fieldset>
+
+            <button type="submit">Enviar Formulario</button>
         </form>
     </div>
 
