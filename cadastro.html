@@ -13,50 +13,70 @@
     
     <div id="titulo">
         <H1>Formulario CAD</H1>
-        <p>Complete suas Informações</p>
+
     </div>
 
     <div>
         <form action="">
             <fieldset class="grupo">
+                <p> <h2 id="ordem">Complete suas Informações</h2></p>
                 <fieldset id="dadospessoais">
                     <h3 class="subtitulo">DADOS PESSOAIS</h3>
-                    <div class="campo">
-                        <label for="name"> <strong> Nome </strong> </label>
-                        <input type="name" name="nome" id="name" placeholder="Digite seu Nome" required> 
+                    <div class="linhas">
+                        <div class="campo">
+                            <label for="name"> <strong> Nome </strong> </label>
+                            <input type="name" name="nome" id="name" placeholder="Digite seu Nome" required> 
+                        </div>
+                            <br>
+                        <div class="campo">
+                            <label for="sobrenome"> <strong> Sobrenome </strong> </label>
+                            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome" required>
+                        </div>
+                            <br>
+                        <div class="campo"> 
+                            <label for="email"> <strong>E-mail</strong> </label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+                        </div>
                     </div>
+
                         <br>
-                    <div class="campo">
-                        <label for="sobrenome"> <strong> Sobrenome </strong> </label>
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome" required>
+                    <div class="linhas">    
+                        <div class="campo"> 
+                            <label for="sexo"> <strong>Sexo</strong> </label>
+                            <select name="sexo" id="sexo">
+                                <option value="1" selected disabled>Escolha seu Sexo</option>
+                                <option value="2" >M</option>
+                                <option value="3" >F</option>
+                            </select>
+                        </div>
+                            <br>
+                        <div class="campo">
+                                <label for="idade"> <strong>Idade</strong></label>
+                                <input type="numerico" name="idade" id="idade" placeholder="Digite sua Idade" required>
+                        </div>
+                            <br>
+                        <div class="campo"> 
+                            <label for="data"> <strong>Data de Nascimento</strong> </label>
+                            <input type="date" name="data" id="data">
+                        </div>
                     </div>
+
                         <br>
-                    <div class="campo"> 
-                        <label for="email"> <strong>E-mail</strong> </label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
-                    </div>
-                        <br>
-                    <div class="campo">
-                        <label for="CPF"> <strong>CPF</strong> </label>
-                        <input type="CPF" name="CPF" id="CPF" placeholder="Digite o seu CPF" required> *Somente Numeros
-                    </div>
-                        <br>
-                    <div class="campo">
-                        <label for="RG"> <strong>RG</strong> </label>
-                        <input type="RG" name="RG" id="RG" placeholder="Digite o seu RG" required> *Somente Numeros
-                    </div>
-                        <br>
-                    <div class="campo"> 
-                        <label for="sexo"> <strong>Sexo</strong> </label>
-                        <select name="sexo" id="sexo">
-                            <option value="1" selected disabled>Escolha seu Sexo</option>
-                            <option value="2" >M</option>
-                            <option value="3" >F</option>
-                        </select>
+                     
+                    <div class="linhas"> 
+                        <div class="campo">
+                            <label for="CPF"> <strong>CPF</strong> </label>
+                            <input type="CPF" name="CPF" id="CPF" placeholder="Digite o seu CPF" required> *Somente Numeros
+                        </div>
+                            <br>
+                        <div class="campo">
+                            <label for="RG"> <strong>RG</strong> </label>
+                            <input type="RG" name="RG" id="RG" placeholder="Digite o seu RG" required> *Somente Numeros
+                        </div>
                     </div>
                 </fieldset>
 
-                    <br>
+               
 
                 <fieldset id="dadosdelocalização">
                     <H3 class="subtitulo">DADOS DE LOCALIZAÇÃO</H3>
@@ -131,7 +151,9 @@
                 </fieldset>
             </fieldset>
 
-            <button type="submit" id="botao">Enviar Formulario</button>
+            <div id="botao">
+                <button type="submit"><h2 id="textobotao">Enviar Formulario</h2></button>
+            </div>
         </form>
     </div>
 
