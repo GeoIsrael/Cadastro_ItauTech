@@ -5,7 +5,7 @@
 
 #titulo {
     font-family: sans-serif;
-    color: blue;
+    color: white;
     margin-left: 40%;
     justify-content: center;
 }
@@ -53,6 +53,7 @@ body {
     margin-top: 5%;
     margin-bottom: 3%;
     justify-content: center;
+    background-color: blue;
 }
 
 input, select, textarea, button {
@@ -80,7 +81,21 @@ margin-bottom: 1em;
     text-align: justify;
 }
 
+.grupo {
+    background-color: white;
+}
 
+#cidade {
+    width: 14em;
+}
+
+#numero {
+    width: 17em;
+}
+
+#idade {
+    width: 8em;
+}
 
 
 
