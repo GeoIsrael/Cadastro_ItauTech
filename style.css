@@ -10,6 +10,18 @@
     justify-content: center;
 }
 
+#botao {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 10%;
+    height: 8%;
+    text-align: center;
+}
+
+#rodape {
+    text-align: right;
+}
+
 body {
     font-family: sans-serif;
     color: cornflowerblue;
@@ -29,6 +41,16 @@ input, select, textarea, button {
 .campo {
 margin-left: 5ex;
 margin-bottom: 1em;
+}
+
+.subtitulo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.nome, .sobrenome {
+    text-align: justify;
 }
 
 

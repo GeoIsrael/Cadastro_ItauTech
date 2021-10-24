@@ -19,113 +19,126 @@
     <div>
         <form action="">
             <fieldset class="grupo">
-                <div class="campo">
-                    <label for="name"> <strong> Nome </strong> </label>
-                    <input type="name" name="nome" id="name" placeholder="Digite seu Nome" required> 
-                </div>
+                <fieldset id="dadospessoais">
+                    <h3 class="subtitulo">DADOS PESSOAIS</h3>
+                    <div class="campo">
+                        <label for="name"> <strong> Nome </strong> </label>
+                        <input type="name" name="nome" id="name" placeholder="Digite seu Nome" required> 
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="sobrenome"> <strong> Sobrenome </strong> </label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome" required>
+                    </div>
+                        <br>
+                    <div class="campo"> 
+                        <label for="email"> <strong>E-mail</strong> </label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="CPF"> <strong>CPF</strong> </label>
+                        <input type="CPF" name="CPF" id="CPF" placeholder="Digite o seu CPF" required> *Somente Numeros
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="RG"> <strong>RG</strong> </label>
+                        <input type="RG" name="RG" id="RG" placeholder="Digite o seu RG" required> *Somente Numeros
+                    </div>
+                        <br>
+                    <div class="campo"> 
+                        <label for="sexo"> <strong>Sexo</strong> </label>
+                        <select name="sexo" id="sexo">
+                            <option value="1" selected disabled>Escolha seu Sexo</option>
+                            <option value="2" >M</option>
+                            <option value="3" >F</option>
+                        </select>
+                    </div>
+                </fieldset>
+
                     <br>
-                <div class="campo">
-                    <label for="sobrenome"> <strong> Sobrenome </strong> </label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome" required>
-                </div>
-                    <br>
-                <div class="campo"> 
-                    <label for="email"> <strong>E-mail</strong> </label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="CPF"> <strong>CPF</strong> </label>
-                    <input type="CPF" name="CPF" id="CPF" placeholder="Digite o seu CPF (COMENTE NUMEROS)" required>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="RG"> <strong>RG</strong> </label>
-                    <input type="RG" name="RG" id="RG" placeholder="Digite o seu RG" required>
-                </div>
-                    <br>
-                <div class="campo"> 
-                    <label for="sexo"> <strong>Sexo</strong> </label>
-                    <input type="sexo" name="sexo" id="sexo" placeholder="Digite o seu Sexo" required>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="endereço"> <strong>Endereço</strong> </label>
-                    <input type="text" name="endereço" id="endereço" placeholder="Digite seu E-mail Endereço" required>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="numero"> <strong>Numero</strong> </label>
-                    <input type="text" name="numero" id="numero" placeholder="Digite o Numero da sua Residencia" required>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="bairro"> <strong>Bairro</strong> </label>
-                    <input type="text" name="bairro" id="bairro" placeholder="Digite seu Bairro" required>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="estado"> <strong>Estado</strong> </label>
-                    <select name="estado" id="estado" required>
-                        <option value="1" selected disabled>Escolha seu Estado</option>
-                        <option value="2">Acre</option>
-                        <option value="3"> Alagoas</option>
-                        <option value="4"> Amapá</option>
-                        <option value="5"> Amazonas</option>
-                        <option value="6"> Bahia</option>
-                        <option value="7"> Ceará</option>
-                        <option value="8"> Espirito Santo</option>
-                        <option value="9"> Goiás</option>
-                        <option value="10"> Maranhão</option>
-                        <option value="11"> Mato Grosso</option>
-                        <option value="12"> Mato Grosso do Sul</option>
-                        <option value="13"> Minas Gerais</option>
-                        <option value="14"> Pará</option>
-                        <option value="15"> Paraíba</option>
-                        <option value="16"> Paraná</option>
-                        <option value="17"> Pernambuco</option>
-                        <option value="18"> Piauí</option>
-                        <option value="19"> Rio de Janeiro</option>
-                        <option value="20"> Rio Grande do Norte</option>
-                        <option value="21"> Rio Grande do Sul</option>
-                        <option value="22"> Rondônia</option>
-                        <option value="23"> Roraima</option>
-                        <option value="24"> Santa Catarina</option>
-                        <option value="25"> São Paulo</option>
-                        <option value="26"> Sergipe</option>
-                        <option value="27"> Tocantins</option>
-                        <option value="28"> Distrito Fderal</option>
-                    </select>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="cidade"> <strong>Cidade</strong> </label>
-                    <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da sua Cidade" required>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="CEP"> <strong>CEP</strong> </label>
-                    <input type="CEP" name="CEP" id="CEP" placeholder="Digite Seu CEP" required>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="telefone"> <strong>Telefone Fixo</strong> </label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone Fixo" required>
-                </div>
-                    <br>
-                <div class="campo">
-                    <label for="celular"> <strong>Celular</strong> </label>
-                    <input type="tel" name="tel" id="celular" placeholder="Digite seu Celular" required>
-                </div>
+
+                <fieldset id="dadosdelocalização">
+                    <H3 class="subtitulo">DADOS DE LOCALIZAÇÃO</H3>
+                    <div class="campo">
+                        <label for="endereço"> <strong>Endereço</strong> </label>
+                        <input type="text" name="endereço" id="endereço" placeholder="Digite seu E-mail Endereço" required>
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="numero"> <strong>Numero</strong> </label>
+                        <input type="text" name="numero" id="numero" placeholder="Digite o Numero da sua Residencia" required>
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="bairro"> <strong>Bairro</strong> </label>
+                        <input type="text" name="bairro" id="bairro" placeholder="Digite seu Bairro" required>
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="estado"> <strong>Estado</strong> </label>
+                        <select name="estado" id="estado" required>
+                            <option value="1" selected disabled>Escolha seu Estado</option>
+                            <option value="2">Acre</option>
+                            <option value="3"> Alagoas</option>
+                            <option value="4"> Amapá</option>
+                            <option value="5"> Amazonas</option>
+                            <option value="6"> Bahia</option>
+                            <option value="7"> Ceará</option>
+                            <option value="8"> Espirito Santo</option>
+                            <option value="9"> Goiás</option>
+                            <option value="10"> Maranhão</option>
+                            <option value="11"> Mato Grosso</option>
+                            <option value="12"> Mato Grosso do Sul</option>
+                            <option value="13"> Minas Gerais</option>
+                            <option value="14"> Pará</option>
+                            <option value="15"> Paraíba</option>
+                            <option value="16"> Paraná</option>
+                            <option value="17"> Pernambuco</option>
+                            <option value="18"> Piauí</option>
+                            <option value="19"> Rio de Janeiro</option>
+                            <option value="20"> Rio Grande do Norte</option>
+                            <option value="21"> Rio Grande do Sul</option>
+                            <option value="22"> Rondônia</option>
+                            <option value="23"> Roraima</option>
+                            <option value="24"> Santa Catarina</option>
+                            <option value="25"> São Paulo</option>
+                            <option value="26"> Sergipe</option>
+                            <option value="27"> Tocantins</option>
+                            <option value="28"> Distrito Fderal</option>
+                        </select>
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="cidade"> <strong>Cidade</strong> </label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da sua Cidade" required>
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="CEP"> <strong>CEP</strong> </label>
+                        <input type="CEP" name="CEP" id="CEP" placeholder="Digite Seu CEP" required>
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="telefone"> <strong>Telefone Fixo</strong> </label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone Fixo" required>
+                    </div>
+                        <br>
+                    <div class="campo">
+                        <label for="celular"> <strong>Celular</strong> </label>
+                        <input type="tel" name="tel" id="celular" placeholder="Digite seu Celular" required>
+                    </div>
+                </fieldset>
             </fieldset>
 
-            <button type="submit">Enviar Formulario</button>
+            <button type="submit" id="botao">Enviar Formulario</button>
         </form>
     </div>
 
     <hr>
 
-    <p>© 2021 Cad (Israel Salles) - Todos os direitos reservados.
-        Programa de Formação Tech Itaú PCD em parceria com a Gama Academy</p>
+    <p id="rodape">© 2021 Cad (Israel Salles) - Todos os direitos reservados. <br>
+        Programa de Formação Tech Itaú PCD em parceria com a Gama Academy <br>
+        Gama Academy - Transformando Talentos para o Futuro</p>
 </body>
 </html>
