@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: blue;
+    margin-left: 40%;
+    justify-content: center;
+}
+
+body {
+    font-family: sans-serif;
+    color: cornflowerblue;
+    background-color: whitesmoke;
+    font-size: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    justify-content: center;
+}
+
+input, select, textarea, button {
+    border-radius: 2px;
+}
+
+.campo {
+margin-left: 5ex;
+margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
