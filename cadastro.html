@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="java.js">
     <script language="javascript">
         function valida(){
             if(valida_cpf(document.getElementById('cpf').value))
@@ -50,11 +51,11 @@
                     return false;
         }
     </script>
-    <title>cad</title>
+    <title> .: Formulário TEC :. </title>
 </head>
 <body>
     <div id="titulo">
-        <H1>Formulario CAD</H1>
+        <H1>Formulário TEC</H1>
 
     </div>
 
@@ -89,6 +90,7 @@
                                 <option value="1" selected disabled>Escolha seu Sexo</option>
                                 <option value="2" >M</option>
                                 <option value="3" >F</option>
+                                <option value="4" >Outros</option>
                             </select>
                         </div>
                             <br>
@@ -203,7 +205,7 @@
             </fieldset>
 
             <div id="botao">
-                <button type="submit"><h2 id="textobotao" onclick="">Enviar Formulario</h2></button>
+                <button type="submit" id="textobotao" onclick="aviso ()"><h2>Enviar Formulario</h2></button>
             </div>
         </form>
     </div>
@@ -213,5 +215,7 @@
     <p id="rodape">© 2021 Cad (Israel Salles) - Todos os direitos reservados. <br>
         Programa de Formação Tech Itaú PCD em parceria com a Gama Academy <br>
         Gama Academy - Transformando Talentos para o Futuro</p>
+
+        <script src="java.js"></script>
 </body>
 </html>
